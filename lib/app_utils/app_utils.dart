@@ -8,3 +8,4 @@ const Color borderColor = Color.fromRGBO(234, 239, 243, 1);
 const Color submitPinColor = Color.fromRGBO(234, 239, 243, 1);
 const Color focusePinThemeColor = Color.fromRGBO(210, 221, 232, 1);
 const webScreen = 600;
+const Color colorCard = Color(0xFFFAF1F1);
