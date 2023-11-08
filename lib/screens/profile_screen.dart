@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:post_cripto/app_utils/app_utils.dart';
+import 'package:post_cripto/screens/payment_screens/payment_method_screen.dart';
+import 'package:post_cripto/widgets/cardwidget.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
@@ -7,14 +9,23 @@ class ProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.deepPurple,
+      backgroundColor: colorPrimary,
       appBar: AppBar(
-        title: const Text('Profile'),
+        backgroundColor: colorPrimary,
+        title: const Text(
+          'Profile',
+          style: TextStyle(
+            color: Colors.white,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        elevation: 0,
         actions: [
           IconButton(
             onPressed: () {},
             icon: const Icon(
               Icons.notifications,
+              color: Colors.white,
             ),
             iconSize: 30,
           ),
@@ -56,47 +67,64 @@ class ProfileScreen extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 16,
                   color: Colors.white,
+                  fontWeight: FontWeight.w600,
                 ),
               ),
               const SizedBox(
                 height: 18,
               ),
-              Card(
-                elevation: 7,
-                color: colorCard,
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 15.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      const Image(
-                        image: AssetImage('images/paymentmethod.png'),
-                        height: 5,
-                      ),
-                      const SizedBox(
-                        width: 15,
-                      ),
-                      const Text(
-                        'Payment Methods',
-                        style: TextStyle(
-                          fontSize: 18,
-                          fontWeight: FontWeight.w500,
-                        ),
-                      ),
-                      const SizedBox(
-                        width: 120,
-                      ),
-                      Container(
-                        decoration: BoxDecoration(
-                          color: Colors.grey.shade100,
-                          borderRadius: BorderRadius.circular(15),
-                        ),
-                        child: const Icon(
-                          Icons.arrow_forward_ios,
-                        ),
-                      ),
-                    ],
-                  ),
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const PaymentMethodScreen(),
+                    ),
+                  );
+                },
+                child: const CardWidget(
+                  image: 'images/paymentmethod.png',
+                  method: 'Payment Methods',
+                  icon: Icons.arrow_forward_ios,
+                ),
+              ),
+              const SizedBox(
+                height: 8,
+              ),
+              GestureDetector(
+                onTap: () {
+                  print('payment method click');
+                },
+                child: const CardWidget(
+                  image: 'images/qr-code.png',
+                  method: 'QR codes',
+                  icon: Icons.arrow_forward_ios,
+                ),
+              ),
+              const SizedBox(
+                height: 8,
+              ),
+              GestureDetector(
+                onTap: () {
+                  print('payment method click');
+                },
+                child: const CardWidget(
+                  image: 'images/paymentmethod.png',
+                  method: 'Payment Methods',
+                  icon: Icons.arrow_forward_ios,
+                ),
+              ),
+              const SizedBox(
+                height: 8,
+              ),
+              GestureDetector(
+                onTap: () {
+                  print('payment method click');
+                },
+                child: const CardWidget(
+                  image: 'images/paymentmethod.png',
+                  method: 'Payment Methods',
+                  icon: Icons.arrow_forward_ios,
                 ),
               ),
             ],
