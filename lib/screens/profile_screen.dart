@@ -85,6 +85,7 @@ class ProfileScreen extends StatelessWidget {
                 child: const CardWidget(
                   image: 'images/paymentmethod.png',
                   method: 'Payment Methods',
+                  imageSize: 38,
                   icon: Icons.arrow_forward_ios,
                 ),
               ),
@@ -98,6 +99,7 @@ class ProfileScreen extends StatelessWidget {
                 child: const CardWidget(
                   image: 'images/qr-code.png',
                   method: 'QR codes',
+                  imageSize: 35,
                   icon: Icons.arrow_forward_ios,
                 ),
               ),
@@ -109,8 +111,9 @@ class ProfileScreen extends StatelessWidget {
                   print('payment method click');
                 },
                 child: const CardWidget(
-                  image: 'images/paymentmethod.png',
-                  method: 'Payment Methods',
+                  image: 'images/fingerprint.png',
+                  method: 'Screeen Lock',
+                  imageSize: 35,
                   icon: Icons.arrow_forward_ios,
                 ),
               ),
@@ -122,8 +125,9 @@ class ProfileScreen extends StatelessWidget {
                   print('payment method click');
                 },
                 child: const CardWidget(
-                  image: 'images/paymentmethod.png',
-                  method: 'Payment Methods',
+                  image: 'images/logout.png',
+                  method: 'LogOut',
+                  imageSize: 35,
                   icon: Icons.arrow_forward_ios,
                 ),
               ),
