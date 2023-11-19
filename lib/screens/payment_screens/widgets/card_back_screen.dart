@@ -1,11 +1,14 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'dart:math';
 
 import 'package:flutter/material.dart';
 
-import '../../../app_utils/app_utils.dart';
-
 class CardBackScreen extends StatefulWidget {
-  const CardBackScreen({super.key});
+  final String cvvNumber;
+  const CardBackScreen({
+    Key? key,
+    required this.cvvNumber,
+  }) : super(key: key);
 
   @override
   State<CardBackScreen> createState() => _CardBackScreenState();
@@ -24,7 +27,7 @@ class _CardBackScreenState extends State<CardBackScreen> {
         height: 300,
         child: Card(
           margin: const EdgeInsets.all(16),
-          color: borderColor,
+          color: Colors.greenAccent.shade400,
           elevation: 8,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(16),
@@ -66,14 +69,14 @@ class _CardBackScreenState extends State<CardBackScreen> {
                       alignment: Alignment.centerLeft,
                       height: 30,
                       width: 200,
-                      color: Colors.grey,
+                      color: Colors.white38,
                     ),
                     const SizedBox(
                       width: 15,
                     ),
-                    const Text(
-                      '234',
-                      style: TextStyle(
+                    Text(
+                      widget.cvvNumber,
+                      style: const TextStyle(
                           fontStyle: FontStyle.italic,
                           fontSize: 20,
                           fontWeight: FontWeight.w700),
@@ -86,28 +89,28 @@ class _CardBackScreenState extends State<CardBackScreen> {
               ),
               Container(
                 height: 15,
-                color: Colors.grey,
+                color: Colors.white70,
               ),
               const SizedBox(
                 height: 10,
               ),
               Container(
                 height: 15,
-                color: Colors.grey,
+                color: Colors.white70,
               ),
               const SizedBox(
                 height: 10,
               ),
               Container(
                 height: 15,
-                color: Colors.grey,
+                color: Colors.white70,
               ),
               const SizedBox(
                 height: 10,
               ),
               Container(
                 height: 15,
-                color: Colors.grey,
+                color: Colors.white70,
               ),
             ],
           ),

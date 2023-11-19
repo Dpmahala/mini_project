@@ -6,11 +6,13 @@ class CardWidget extends StatelessWidget {
   final String method;
   final IconData icon;
   final double imageSize;
+  final TextStyle? fontStyle;
   const CardWidget({
     Key? key,
     required this.image,
     required this.method,
     required this.icon,
+    this.fontStyle,
     this.imageSize = 50.0,
   }) : super(key: key);
 
@@ -51,6 +53,7 @@ class CardWidget extends StatelessWidget {
                 style: const TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.w500,
+                  fontFamily: 'Montserrat',
                 ),
               ),
               const Spacer(),

@@ -15,9 +15,17 @@ class ProfileScreen extends StatelessWidget {
         title: const Text(
           'Profile',
           style: TextStyle(
+            fontFamily: 'Montserrat',
             color: Colors.white,
             fontWeight: FontWeight.bold,
           ),
+        ),
+        leading: IconButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          icon: const Icon(Icons.arrow_back),
+          color: Colors.white,
         ),
         elevation: 0,
         actions: [
@@ -65,10 +73,10 @@ class ProfileScreen extends StatelessWidget {
               const Text(
                 'Dwarka Prasad',
                 style: TextStyle(
-                  fontSize: 16,
-                  color: Colors.white,
-                  fontWeight: FontWeight.w600,
-                ),
+                    fontSize: 16,
+                    color: Colors.white,
+                    fontWeight: FontWeight.w600,
+                    fontFamily: 'Montserrat'),
               ),
               const SizedBox(
                 height: 18,
@@ -112,7 +120,7 @@ class ProfileScreen extends StatelessWidget {
                 },
                 child: const CardWidget(
                   image: 'images/fingerprint.png',
-                  method: 'Screeen Lock',
+                  method: 'Screen Lock',
                   imageSize: 35,
                   icon: Icons.arrow_forward_ios,
                 ),
@@ -126,7 +134,7 @@ class ProfileScreen extends StatelessWidget {
                 },
                 child: const CardWidget(
                   image: 'images/logout.png',
-                  method: 'LogOut',
+                  method: 'Log Out',
                   imageSize: 35,
                   icon: Icons.arrow_forward_ios,
                 ),

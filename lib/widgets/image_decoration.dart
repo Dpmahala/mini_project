@@ -36,7 +36,8 @@ class SquareTile extends StatelessWidget {
                 style: const TextStyle(
                     color: colorWhite,
                     fontSize: 20,
-                    fontWeight: FontWeight.bold), // Adjust the style as needed
+                    fontWeight: FontWeight.bold,
+                    fontFamily: 'Montserrat'), // Adjust the style as needed
               ),
             ],
           ),

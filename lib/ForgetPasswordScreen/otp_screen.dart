@@ -50,6 +50,7 @@ class _OtpScreenState extends State<OtpScreen> {
                 child: Text(
                   'Enter your OTP',
                   style: TextStyle(
+                    fontFamily: 'Montserrat',
                     color: colorWhite,
                     fontWeight: FontWeight.bold,
                     fontSize: 35.0,
@@ -70,8 +71,11 @@ class _OtpScreenState extends State<OtpScreen> {
               ),
               GestureDetector(
                 onTap: () {
-                  Navigator.of(context).pushReplacement(MaterialPageRoute(
-                      builder: (context) => const ResetPasswordScreen()));
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(
+                      builder: (context) => const ResetPasswordScreen(),
+                    ),
+                  );
                 },
                 child: Container(
                   height: 50,
@@ -83,6 +87,7 @@ class _OtpScreenState extends State<OtpScreen> {
                       child: Text(
                     'Verifiy OTP',
                     style: TextStyle(
+                        fontFamily: 'Montserrat',
                         color: colorPrimary,
                         fontSize: 18,
                         fontWeight: FontWeight.bold),
@@ -97,14 +102,17 @@ class _OtpScreenState extends State<OtpScreen> {
                 children: [
                   const Text(
                     "Don't recive code? ",
-                    style: TextStyle(color: Colors.white60),
+                    style: TextStyle(
+                        color: Colors.white60, fontFamily: 'Montserrat'),
                   ),
                   GestureDetector(
                     onTap: () {},
                     child: const Text(
                       'Resend',
                       style: TextStyle(
-                          color: colorWhite, fontWeight: FontWeight.w500),
+                          color: colorWhite,
+                          fontWeight: FontWeight.w500,
+                          fontFamily: 'Montserrat'),
                     ),
                   )
                 ],

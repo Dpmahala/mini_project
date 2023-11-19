@@ -12,6 +12,8 @@ class InputField extends StatelessWidget {
     this.obscureText = false,
     this.suffixIcon,
     this.onToggleVisibility,
+    this.fontStyle,
+
     // required TextEditingController nameController,
     // required TextEditingController emailController,
     // required TextEditingController phoneNummberController,
@@ -20,13 +22,13 @@ class InputField extends StatelessWidget {
 
   final TextEditingController controller;
   final String hintText;
-  final  keyboardType;
+  final keyboardType;
   final IconData icon;
   final String lableText;
   final bool obscureText;
   final IconData? suffixIcon;
   final VoidCallback? onToggleVisibility;
-
+  final TextStyle? fontStyle;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -48,7 +50,8 @@ class InputField extends StatelessWidget {
             color: colorWhite,
           ),
           labelText: lableText,
-          labelStyle: const TextStyle(color: colorsGrey),
+          labelStyle:
+              const TextStyle(color: colorsGrey, fontFamily: 'Montserrat'),
           focusColor: colorWhite,
           hintText: hintText,
           hintStyle: const TextStyle(color: colorsGrey),

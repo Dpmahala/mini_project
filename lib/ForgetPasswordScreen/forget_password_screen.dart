@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:post_cripto/app_utils/app_utils.dart';
 import 'package:post_cripto/ForgetPasswordScreen/email_show_bar.dart';
 import 'package:post_cripto/ForgetPasswordScreen/phone_show_bar.dart';
+import 'package:post_cripto/app_utils/app_utils.dart';
 
 class ForgetPasswordScreen extends StatefulWidget {
   const ForgetPasswordScreen({super.key});
@@ -22,6 +22,7 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
             child: Text(
               'Forget password',
               style: TextStyle(
+                fontFamily: 'Montserrat',
                 color: colorWhite,
                 fontSize: 30.0,
                 fontWeight: FontWeight.bold,
@@ -34,11 +35,18 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
           const Text(
             'Make Selection!',
             style: TextStyle(
-                color: colorWhite, fontSize: 22.0, fontWeight: FontWeight.w700),
+              color: colorWhite,
+              fontSize: 22.0,
+              fontWeight: FontWeight.w700,
+              fontFamily: 'Montserrat',
+            ),
           ),
           const Text(
             'Select one of the option given below to reset your password',
-            style: TextStyle(color: Colors.white60),
+            style: TextStyle(
+                color: Colors.white,
+                fontWeight: FontWeight.w600,
+                fontFamily: 'Montserrat'),
           ),
           const SizedBox(
             height: 30.0,
@@ -72,9 +80,17 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
                     children: [
                       Text(
                         'E-mail',
-                        style: TextStyle(fontWeight: FontWeight.w500),
+                        style: TextStyle(
+                          fontWeight: FontWeight.w500,
+                          fontFamily: 'Montserrat',
+                        ),
                       ),
-                      Text('Reset via E-mail Verification')
+                      Text(
+                        'Reset via E-mail Verification',
+                        style: TextStyle(
+                            fontWeight: FontWeight.w600,
+                            fontFamily: 'Montserrat'),
+                      )
                     ],
                   ),
                 ],
@@ -110,9 +126,16 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
                     children: [
                       Text(
                         'Phone',
-                        style: TextStyle(fontWeight: FontWeight.w500),
+                        style: TextStyle(
+                            fontWeight: FontWeight.w500,
+                            fontFamily: 'Montserrat'),
                       ),
-                      Text('Reset via Phone number Verification')
+                      Text(
+                        'Reset via Phone number Verification',
+                        style: TextStyle(
+                            fontFamily: 'Montserrat',
+                            fontWeight: FontWeight.w600),
+                      )
                     ],
                   ),
                 ],
@@ -136,7 +159,10 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
               child: const Center(
                 child: Text(
                   'Cancel',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18.0),
+                  style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 18.0,
+                      fontFamily: 'Montserrat'),
                 ),
               ),
             ),

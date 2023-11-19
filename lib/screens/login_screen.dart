@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:post_cripto/ForgetPasswordScreen/forget_password_screen.dart';
 import 'package:post_cripto/app_utils/app_utils.dart';
-import 'package:post_cripto/screens/forget_password_screen.dart';
 import 'package:post_cripto/screens/registration_screen.dart';
 import 'package:post_cripto/widgets/button.dart';
 import 'package:post_cripto/widgets/image_decoration.dart';
@@ -60,12 +60,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 const Center(
                   child: Text(
                     'Please login or sign up to continue using our app',
-                    style: TextStyle(
-                      fontFamily: 'Montserrat',
-                      color: colorWhite,
-                      fontSize: 14.0,
-                      fontWeight: FontWeight.w600,
-                    ),
+                    style: simpleText,
                   ),
                 ),
                 SizedBox(
@@ -120,8 +115,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         },
                         child: const Text(
                           'Forget Password?',
-                          style: TextStyle(
-                              color: colorWhite, fontWeight: FontWeight.w600),
+                          style: simpleText,
                         ),
                       ),
                     ],
@@ -136,6 +130,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     const Text(
                       "Don't have an Account?",
                       style: TextStyle(
+                        fontFamily: 'Montserrat',
                         color: Colors.white60,
                       ),
                     ),
@@ -146,11 +141,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       },
                       child: const Text(
                         ' Sign Up',
-                        style: TextStyle(
-                          color: colorWhite,
-                          fontFamily: 'Montserrat',
-                          fontWeight: FontWeight.bold,
-                        ),
+                        style: signupText,
                       ),
                     ),
                   ],
@@ -176,8 +167,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         padding: EdgeInsets.symmetric(horizontal: 10.0),
                         child: Text(
                           'Or continue with',
-                          style: TextStyle(
-                              color: colorWhite, fontFamily: 'Montserrat'),
+                          style: simpleText,
                         ),
                       ),
                       Expanded(
@@ -201,7 +191,9 @@ class _LoginScreenState extends State<LoginScreen> {
                             print('click google');
                           },
                           child: const SquareTile(
-                              imagepath: 'images/google.png', text: 'Google')),
+                            imagepath: 'images/google.png',
+                            text: 'Google',
+                          )),
                       const SizedBox(
                         width: 20,
                       ),

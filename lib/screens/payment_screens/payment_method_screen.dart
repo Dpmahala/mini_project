@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:post_cripto/app_utils/app_utils.dart';
 import 'package:post_cripto/screens/payment_screens/credit_card_payment.dart';
 
 class PaymentMethodScreen extends StatefulWidget {
@@ -36,11 +37,10 @@ class _PaymentMethodScreenState extends State<PaymentMethodScreen> {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: colorPrimary,
         title: const Text(
           'Payment Methods',
-          style: TextStyle(
-            fontWeight: FontWeight.w500,
-          ),
+          style: appBarText,
         ),
         leading: IconButton(
           onPressed: () {
@@ -48,6 +48,7 @@ class _PaymentMethodScreenState extends State<PaymentMethodScreen> {
           },
           icon: const Icon(
             Icons.arrow_back,
+            color: Colors.white,
           ),
         ),
       ),

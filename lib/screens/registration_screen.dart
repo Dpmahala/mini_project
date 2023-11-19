@@ -122,8 +122,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                     const Text(
                       'Already have an account?',
                       style: TextStyle(
-                        color: Colors.white60,
-                      ),
+                          color: Colors.white60, fontFamily: 'Montserrat'),
                     ),
                     GestureDetector(
                       onTap: () {
