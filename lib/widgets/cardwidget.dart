@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:post_cripto/app_utils/app_utils.dart';
+import 'package:post_cripto/app_utils/colors.dart';
 
 class CardWidget extends StatelessWidget {
   final String image;
@@ -19,7 +19,7 @@ class CardWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 65,
+      height: 50,
       child: Card(
         elevation: 7,
         color: colorCard,

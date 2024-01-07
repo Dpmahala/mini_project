@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:post_cripto/app_utils/app_utils.dart';
+import 'package:post_cripto/app_utils/colors.dart';
 
 class InputField extends StatelessWidget {
   const InputField({
@@ -22,6 +22,7 @@ class InputField extends StatelessWidget {
 
   final TextEditingController controller;
   final String hintText;
+  // ignore: prefer_typing_uninitialized_variables
   final keyboardType;
   final IconData icon;
   final String lableText;

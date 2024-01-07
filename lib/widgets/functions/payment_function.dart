@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:post_cripto/app_utils/app_utils.dart';
+import 'package:post_cripto/app_utils/colors.dart';
 
 class PaymentFunction extends StatelessWidget {
   final IconData icons;

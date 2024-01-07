@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:post_cripto/ForgetPasswordScreen/forget_password_screen.dart';
-import 'package:post_cripto/app_utils/app_utils.dart';
+import 'package:post_cripto/app_utils/colors.dart';
+import 'package:post_cripto/app_utils/text_style.dart';
 import 'package:post_cripto/screens/registration_screen.dart';
 import 'package:post_cripto/widgets/button.dart';
 import 'package:post_cripto/widgets/image_decoration.dart';
@@ -103,9 +104,9 @@ class _LoginScreenState extends State<LoginScreen> {
                             builder: (context) => Container(
                               width: MediaQuery.of(context).size.width,
                               padding: const EdgeInsets.all(20.0),
-                              decoration: const BoxDecoration(
+                              decoration: BoxDecoration(
                                 color: colorPrimary,
-                                borderRadius: BorderRadius.vertical(
+                                borderRadius: const BorderRadius.vertical(
                                   top: Radius.circular(30),
                                 ),
                               ),
@@ -167,7 +168,8 @@ class _LoginScreenState extends State<LoginScreen> {
                         padding: EdgeInsets.symmetric(horizontal: 10.0),
                         child: Text(
                           'Or continue with',
-                          style: simpleText,
+                          style: TextStyle(
+                              fontFamily: 'Montserrat', color: Colors.white),
                         ),
                       ),
                       Expanded(

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:post_cripto/app_utils/app_utils.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:post_cripto/app_utils/colors.dart';
 import 'package:post_cripto/layouts/mobile_screen_layout.dart';
 import 'package:post_cripto/layouts/responsive_layout.dart';
 import 'package:post_cripto/layouts/web_screen_layout.dart';
@@ -13,17 +14,20 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Post Cripography',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: colorPrimary),
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-        useMaterial3: true,
-      ),
-      home: const ResponsiveLayout(
-        mobileScreen: MobileScreen(),
-        webScreen: WebScreen(),
+    return ScreenUtilInit(
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'Post Cripography',
+        theme: ThemeData(
+          colorScheme: ColorScheme.fromSeed(seedColor: colorPrimary),
+          visualDensity: VisualDensity.adaptivePlatformDensity,
+          useMaterial3: true,
+          fontFamily: 'Poppins',
+        ),
+        home: const ResponsiveLayout(
+          mobileScreen: MobileScreen(),
+          webScreen: WebScreen(),
+        ),
       ),
     );
   }

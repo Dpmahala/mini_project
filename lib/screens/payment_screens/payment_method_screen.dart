@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:post_cripto/app_utils/app_utils.dart';
+import 'package:post_cripto/app_utils/colors.dart';
+import 'package:post_cripto/app_utils/text_style.dart';
 import 'package:post_cripto/screens/payment_screens/credit_card_payment.dart';
 
 class PaymentMethodScreen extends StatefulWidget {

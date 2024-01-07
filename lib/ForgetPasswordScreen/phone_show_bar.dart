@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:post_cripto/ForgetPasswordScreen/otp_screen.dart';
-import 'package:post_cripto/app_utils/app_utils.dart';
+import 'package:post_cripto/app_utils/colors.dart';
 import 'package:post_cripto/widgets/input_field_widget.dart';
 
 class PhoneShowBar extends StatefulWidget {
@@ -84,7 +84,7 @@ class _PhoneShowBarState extends State<PhoneShowBar> {
                         color: colorWhite,
                         borderRadius: BorderRadius.circular(20),
                       ),
-                      child: const Center(
+                      child: Center(
                           child: Text(
                         'Next',
                         style: TextStyle(

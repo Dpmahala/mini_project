@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:post_cripto/app_utils/app_utils.dart';
+import 'package:post_cripto/app_utils/colors.dart';
 
 class SquareTile extends StatelessWidget {
   final String imagepath;
@@ -37,7 +37,7 @@ class SquareTile extends StatelessWidget {
                     color: colorWhite,
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
-                    fontFamily: 'Montserrat'), // Adjust the style as needed
+                    fontFamily: 'Poppins'), // Adjust the style as needed
               ),
             ],
           ),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:post_cripto/ForgetPasswordScreen/email_show_bar.dart';
 import 'package:post_cripto/ForgetPasswordScreen/phone_show_bar.dart';
-import 'package:post_cripto/app_utils/app_utils.dart';
+import 'package:post_cripto/app_utils/colors.dart';
 
 class ForgetPasswordScreen extends StatefulWidget {
   const ForgetPasswordScreen({super.key});

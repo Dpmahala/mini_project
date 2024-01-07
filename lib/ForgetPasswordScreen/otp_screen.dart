@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pinput/pinput.dart';
 import 'package:post_cripto/ForgetPasswordScreen/reset_password_screen.dart';
-import 'package:post_cripto/app_utils/app_utils.dart';
+import 'package:post_cripto/app_utils/colors.dart';
 
 class OtpScreen extends StatefulWidget {
   const OtpScreen({super.key});
@@ -83,7 +83,7 @@ class _OtpScreenState extends State<OtpScreen> {
                   decoration: BoxDecoration(
                       color: colorWhite,
                       borderRadius: BorderRadius.circular(15)),
-                  child: const Center(
+                  child: Center(
                       child: Text(
                     'Verifiy OTP',
                     style: TextStyle(

@@ -1,7 +1,8 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:post_cripto/app_utils/app_utils.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:post_cripto/app_utils/colors.dart';
 import 'package:post_cripto/screens/payment_screens/widgets/card_back_screen.dart';
 import 'package:post_cripto/screens/payment_screens/widgets/card_font_screen.dart';
 
@@ -216,7 +217,7 @@ class _CreditCardState extends State<CreditCard>
                             fontFamily: 'Montserrat',
                             fontWeight: FontWeight.w700,
                             color: Colors.white,
-                            fontSize: 20),
+                            fontSize: 18.h),
                       ),
                       const SizedBox(
                         width: 15,
@@ -227,7 +228,7 @@ class _CreditCardState extends State<CreditCard>
                             fontFamily: 'Montserrat',
                             fontWeight: FontWeight.w700,
                             color: Colors.white,
-                            fontSize: 16),
+                            fontSize: 14.h),
                       ),
                     ],
                   ),

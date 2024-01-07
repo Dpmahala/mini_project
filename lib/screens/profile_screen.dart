@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:post_cripto/app_utils/app_utils.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:post_cripto/app_utils/colors.dart';
 import 'package:post_cripto/screens/payment_screens/payment_method_screen.dart';
 import 'package:post_cripto/widgets/cardwidget.dart';
 
@@ -67,13 +68,13 @@ class ProfileScreen extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(
-                height: 15,
+              SizedBox(
+                height: 14.h,
               ),
-              const Text(
+              Text(
                 'Dwarka Prasad',
                 style: TextStyle(
-                    fontSize: 16,
+                    fontSize: 12.h,
                     color: Colors.white,
                     fontWeight: FontWeight.w600,
                     fontFamily: 'Montserrat'),
@@ -118,10 +119,10 @@ class ProfileScreen extends StatelessWidget {
                 onTap: () {
                   print('payment method click');
                 },
-                child: const CardWidget(
+                child: CardWidget(
                   image: 'images/fingerprint.png',
                   method: 'Screen Lock',
-                  imageSize: 35,
+                  imageSize: 35.h,
                   icon: Icons.arrow_forward_ios,
                 ),
               ),

@@ -1,19 +1,5 @@
 import 'package:flutter/material.dart';
-
-// all colors provide here.
-
-const Color colorWhite = Colors.white;
-const Color colorPrimary = Color(0xFF1F169B);
-const Color colorsGrey = Colors.grey;
-Color colorBoxGrey = Colors.grey.shade200;
-const Color borderColor = Color.fromRGBO(234, 239, 243, 1);
-const Color submitPinColor = Color.fromRGBO(234, 239, 243, 1);
-const Color focusePinThemeColor = Color.fromRGBO(210, 221, 232, 1);
-const webScreen = 600;
-const Color colorCard = Color(0xFFFAF1F1);
-const Color homeScreenColor = Color(0xFF310A8B);
-
-// all textstyle provide here.
+import 'package:post_cripto/app_utils/colors.dart';
 
 const TextStyle headTextStyle =
     TextStyle(fontFamily: 'Montserrat', fontWeight: FontWeight.bold);
@@ -38,3 +24,11 @@ const TextStyle appBarText = TextStyle(
 
 const TextStyle functionText = TextStyle(
     fontWeight: FontWeight.w500, fontSize: 16, fontFamily: 'Montserrat');
+
+const TextStyle webText = TextStyle(
+    fontWeight: FontWeight.w600,
+    fontSize: 10,
+    fontFamily: 'Poppins',
+    color: Colors.black);
+
+const TextStyle mainHomePageText = TextStyle(fontFamily: 'Inter', fontWeight: FontWeight.w800, fontSize: 12,);

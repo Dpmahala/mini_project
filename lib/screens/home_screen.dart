@@ -1,8 +1,8 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:post_cripto/app_utils/app_utils.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:post_cripto/app_utils/colors.dart';
 import 'package:post_cripto/screens/profile_screen.dart';
-import 'package:post_cripto/widgets/functions/payment_function.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -14,212 +14,155 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    Color Curv = homeScreenColor;
+    Color Curv = mainHomeColor;
     var txt = "Home Page";
     return Scaffold(
-      backgroundColor: Colors.white,
-      bottomNavigationBar: CurvedNavigationBar(
-        items: const [
-          Icon(
-            Icons.home,
-            size: 35,
-          ),
+        backgroundColor: mainHomeColor,
+        bottomNavigationBar: CurvedNavigationBar(
+          items: const [
+            Icon(
+              Icons.home,
+              size: 35,
+            ),
 
-          //Icon(Icons.login),
-          Icon(
-            Icons.person,
-            size: 35,
-          ),
-          Icon(
-            Icons.storefront_outlined,
-            size: 35,
-          ),
-          Icon(
-            Icons.history,
-            size: 35,
-          ),
-        ],
-        onTap: (index) {
-          setState(() {
-            if (index == 0) {
-              Curv = homeScreenColor;
-              txt = "Home";
-            }
-            if (index == 1) {
-              Curv = homeScreenColor;
-              txt = "Profile";
-            }
-            if (index == 2) {
-              Curv = homeScreenColor;
-              txt = "Store";
-            }
-            if (index == 3) {
-              // Curv = homeScreenColor;
-              // txt = "History";
-            }
-          });
-        },
-      ),
-      appBar: AppBar(
-        backgroundColor: colorPrimary,
-        leading: GestureDetector(
-          onTap: () {
-            Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const ProfileScreen(),
-                ));
+            //Icon(Icons.login),
+            Icon(
+              Icons.person,
+              size: 35,
+            ),
+            Icon(
+              Icons.storefront_outlined,
+              size: 35,
+            ),
+            Icon(
+              Icons.history,
+              size: 35,
+            ),
+          ],
+          onTap: (index) {
+            setState(() {
+              if (index == 0) {
+                Curv = homeScreenColor;
+                txt = "Home";
+              }
+              if (index == 1) {
+                Curv = homeScreenColor;
+                txt = "Profile";
+              }
+              if (index == 2) {
+                Curv = homeScreenColor;
+                txt = "Store";
+              }
+              if (index == 3) {
+                Curv = homeScreenColor;
+                txt = "History";
+              }
+            });
           },
-          child: const Padding(
-              padding: EdgeInsets.only(left: 8.0),
-              child: CircleAvatar(
-                backgroundColor: Colors.white,
-                child: ImageIcon(
-                  AssetImage(
-                    'images/person.png',
+        ),
+        appBar: AppBar(
+          backgroundColor: appBarColor.withOpacity(.9),
+          elevation: 0,
+          leading: GestureDetector(
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const ProfileScreen(),
+                  ));
+            },
+            child: Padding(
+                padding: EdgeInsets.only(left: 6.r),
+                child: CircleAvatar(
+                  backgroundColor: mainHomeColor.withOpacity(.6),
+                  child: ImageIcon(
+                    const AssetImage(
+                      'images/person.png',
+                    ),
+                    color: Colors.white,
+                    size: 25.h,
                   ),
-                  size: 35,
+                )),
+          ),
+          title: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                'Dwarka Prasad',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontWeight: FontWeight.w500,
+                  fontFamily: 'Montserrat',
+                  fontSize: 13.h,
                 ),
-              )),
-        ),
-        title: const Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              'Dwarka Prasad',
-              style: TextStyle(
-                color: Colors.white,
-                fontWeight: FontWeight.w500,
-                fontFamily: 'Montserrat',
-                fontSize: 18,
+              ),
+              Text(
+                'Pondicherry University',
+                style: TextStyle(
+                    color: Colors.black.withOpacity(.4),
+                    fontSize: 10.h,
+                    fontWeight: FontWeight.w600,
+                    fontFamily: 'Montserrat'),
+              )
+            ],
+          ),
+          actions: [
+            Padding(
+              padding: EdgeInsets.only(right: 4.w),
+              child: const Icon(
+                Icons.more_vert,
+                color: Colors.black,
               ),
             ),
-            Text(
-              'Pondicherry Univercity',
-              style: TextStyle(
-                  color: Colors.cyan, fontSize: 14, fontFamily: 'Montserrat'),
-            )
           ],
         ),
-        actions: const [
-          Icon(
-            Icons.more_vert,
-            color: Colors.white,
-          )
-        ],
-      ),
-      body: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: Column(
+        body: Column(
           children: [
-            Container(
-              padding: const EdgeInsets.only(bottom: 10),
+            SizedBox(
               width: double.infinity,
-              decoration: BoxDecoration(
-                color: Colors.blueAccent.shade400,
-                borderRadius: BorderRadius.circular(10),
-              ),
-              child: const Column(
-                children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              height: 100.h,
+              child: Expanded(
+                  flex: 1,
+                  child: ListView(
+                    scrollDirection: Axis.horizontal,
                     children: [
-                      PaymentFunction(
-                        icons: Icons.qr_code_scanner,
+                      Padding(
+                        padding: EdgeInsets.symmetric(
+                            horizontal: 5.w, vertical: 5.h),
+                        child: Container(
+                          width: 150.w,
+                          height: 10,
+                          decoration: BoxDecoration(
+                              color: paymentCardColor,
+                              borderRadius: BorderRadius.circular(7.r)),
+                        ),
                       ),
-                      PaymentFunction(
-                        icons: Icons.contact_page_rounded,
+                      Padding(
+                        padding: EdgeInsets.symmetric(
+                            horizontal: 4.w, vertical: 7.h),
+                        child: Container(
+                          width: 150.w,
+                          height: 10,
+                          decoration: BoxDecoration(
+                              color: paymentCardColor,
+                              borderRadius: BorderRadius.circular(7.r)),
+                        ),
                       ),
-                      PaymentFunction(
-                        icons: Icons.qr_code_scanner,
-                      ),
-                      PaymentFunction(
-                        icons: Icons.qr_code_scanner,
+                      Padding(
+                        padding: EdgeInsets.symmetric(
+                            horizontal: 5.w, vertical: 5.h),
+                        child: Container(
+                          width: 150.w,
+                          height: 10,
+                          decoration: BoxDecoration(
+                              color: paymentCardColor,
+                              borderRadius: BorderRadius.circular(7.r)),
+                        ),
                       ),
                     ],
-                  ),
-                  Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 10.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text(
-                          'QR Scanner',
-                          style: functionText,
-                        ),
-                        Text(
-                          'QR Scanner',
-                          style: functionText,
-                        ),
-                        Text(
-                          'QR Scanner',
-                          style: functionText,
-                        ),
-                        Text(
-                          'QR Scanner',
-                          style: functionText,
-                        )
-                      ],
-                    ),
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      PaymentFunction(
-                        icons: Icons.qr_code_scanner,
-                      ),
-                      PaymentFunction(
-                        icons: Icons.contact_page_rounded,
-                      ),
-                      PaymentFunction(
-                        icons: Icons.contacts_outlined,
-                      ),
-                      PaymentFunction(
-                        icons: Icons.account_balance_outlined,
-                      ),
-                    ],
-                  ),
-                  Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 10.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text(
-                          'Pay UPI\n  ID',
-                          style: functionText,
-                        ),
-                        Text(
-                          'Pay Bills',
-                          style: functionText,
-                        ),
-                        Text(
-                          'Contact',
-                          style: functionText,
-                        ),
-                        Text(
-                          ' Bank\nBalance',
-                          style: functionText,
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
+                  )),
             ),
-            const SizedBox(
-              height: 10,
-            ),
-            Container(
-              width: double.infinity,
-              height: 150,
-              decoration: BoxDecoration(
-                color: Colors.blue,
-                borderRadius: BorderRadius.circular(10),
-              ),
-            )
           ],
-        ),
-      ),
-    );
+        ));
   }
 }

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:post_cripto/app_utils/app_utils.dart';
+import 'package:post_cripto/app_utils/colors.dart';
 import 'package:post_cripto/screens/login_screen.dart';
 import 'package:post_cripto/widgets/button.dart';
 import 'package:post_cripto/widgets/image_decoration.dart';

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:post_cripto/app_utils/app_utils.dart';
+import 'package:post_cripto/app_utils/colors.dart';
 
 import 'otp_screen.dart';
 
@@ -99,7 +99,7 @@ class _EmailShowBarState extends State<EmailShowBar> {
                         color: colorWhite,
                         borderRadius: BorderRadius.circular(20),
                       ),
-                      child: const Center(
+                      child: Center(
                           child: Text(
                         'Next',
                         style: TextStyle(

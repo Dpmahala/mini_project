@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:post_cripto/app_utils/app_utils.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:post_cripto/app_utils/colors.dart';
 import 'package:post_cripto/screens/login_screen.dart';
 import 'package:post_cripto/widgets/input_field_widget.dart';
 
 class ResetPasswordScreen extends StatefulWidget {
-  const ResetPasswordScreen({Key? key});
+  const ResetPasswordScreen({
+    super.key,
+  });
 
   @override
   State<ResetPasswordScreen> createState() => _ResetPasswordScreenState();
@@ -38,24 +41,26 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              const SizedBox(
-                height: 150,
+              SizedBox(
+                height: 150.h,
               ),
-              const Center(
+              Center(
                 child: Text(
                   'Reset Password',
                   style: TextStyle(
                     color: colorWhite,
-                    fontSize: 35.0,
+                    fontSize: 35.0.h,
                     fontWeight: FontWeight.bold,
                     fontFamily: 'Montserrat',
                   ),
                 ),
               ),
-              const Text(
+              Text(
                 'Set new password',
                 style: TextStyle(
-                    color: colorWhite, fontSize: 15, fontFamily: 'Montserrat'),
+                    color: colorWhite,
+                    fontSize: 15.sp,
+                    fontFamily: 'Montserrat'),
               ),
               SizedBox(
                 height: MediaQuery.of(context).size.height * 0.09,
@@ -91,7 +96,7 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
               ),
               Container(
                 width: MediaQuery.of(context).size.width * 0.9,
-                height: 50,
+                height: 50.h,
                 decoration: BoxDecoration(
                     color: colorWhite,
                     borderRadius: BorderRadius.circular(30.0)),
@@ -101,13 +106,13 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
                     Navigator.of(context).pushReplacement(MaterialPageRoute(
                         builder: (context) => const LoginScreen()));
                   },
-                  child: const Text(
+                  child: Text(
                     'Reset Password',
                     style: TextStyle(
                         fontFamily: 'Montserrat',
                         color: colorPrimary,
                         fontWeight: FontWeight.w700,
-                        fontSize: 18.0),
+                        fontSize: 18.0.h),
                   ),
                 )),
               ),
