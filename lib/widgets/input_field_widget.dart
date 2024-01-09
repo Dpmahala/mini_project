@@ -39,7 +39,7 @@ class InputField extends StatelessWidget {
         obscureText: obscureText,
         controller: controller,
         style: const TextStyle(
-          fontFamily: 'Montserrat',
+          fontFamily: 'Inter',
           color: colorWhite,
         ),
         cursorColor: colorWhite,

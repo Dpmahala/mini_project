@@ -22,7 +22,7 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
             child: Text(
               'Forget password',
               style: TextStyle(
-                fontFamily: 'Montserrat',
+                fontFamily: 'Inter',
                 color: colorWhite,
                 fontSize: 30.0,
                 fontWeight: FontWeight.bold,
@@ -38,7 +38,7 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
               color: colorWhite,
               fontSize: 22.0,
               fontWeight: FontWeight.w700,
-              fontFamily: 'Montserrat',
+              fontFamily: 'Inter',
             ),
           ),
           const Text(
@@ -46,7 +46,7 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
             style: TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.w600,
-                fontFamily: 'Montserrat'),
+                fontFamily: 'Inter'),
           ),
           const SizedBox(
             height: 30.0,
@@ -82,14 +82,13 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
                         'E-mail',
                         style: TextStyle(
                           fontWeight: FontWeight.w500,
-                          fontFamily: 'Montserrat',
+                          fontFamily: 'Inter',
                         ),
                       ),
                       Text(
                         'Reset via E-mail Verification',
                         style: TextStyle(
-                            fontWeight: FontWeight.w600,
-                            fontFamily: 'Montserrat'),
+                            fontWeight: FontWeight.w600, fontFamily: 'Inter'),
                       )
                     ],
                   ),
@@ -127,14 +126,12 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
                       Text(
                         'Phone',
                         style: TextStyle(
-                            fontWeight: FontWeight.w500,
-                            fontFamily: 'Montserrat'),
+                            fontWeight: FontWeight.w500, fontFamily: 'Inter'),
                       ),
                       Text(
                         'Reset via Phone number Verification',
                         style: TextStyle(
-                            fontFamily: 'Montserrat',
-                            fontWeight: FontWeight.w600),
+                            fontFamily: 'Inter', fontWeight: FontWeight.w600),
                       )
                     ],
                   ),
@@ -162,7 +159,7 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
                   style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 18.0,
-                      fontFamily: 'Montserrat'),
+                      fontFamily: 'Inter'),
                 ),
               ),
             ),

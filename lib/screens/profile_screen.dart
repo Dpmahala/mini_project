@@ -10,13 +10,13 @@ class ProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: colorPrimary,
+      backgroundColor: mainHomeColor.withOpacity(.9),
       appBar: AppBar(
-        backgroundColor: colorPrimary,
+        backgroundColor: mainHomeColor.withOpacity(.3),
         title: const Text(
           'Profile',
           style: TextStyle(
-            fontFamily: 'Montserrat',
+            fontFamily: 'Inter',
             color: Colors.white,
             fontWeight: FontWeight.bold,
           ),
@@ -77,7 +77,7 @@ class ProfileScreen extends StatelessWidget {
                     fontSize: 12.h,
                     color: Colors.white,
                     fontWeight: FontWeight.w600,
-                    fontFamily: 'Montserrat'),
+                    fontFamily: 'Inter'),
               ),
               const SizedBox(
                 height: 18,

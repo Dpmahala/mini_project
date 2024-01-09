@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 // all colors provide here.
 
 const Color colorWhite = Colors.white;
-Color colorPrimary = const Color(0xFF1F169B).withOpacity(0.85);
+Color colorPrimary = const Color(0xFF8E853B).withOpacity(0.9);
 const Color colorsGrey = Colors.grey;
 Color colorBoxGrey = Colors.grey.shade200;
 const Color borderColor = Color.fromRGBO(234, 239, 243, 1);

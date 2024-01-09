@@ -51,16 +51,14 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
                     color: colorWhite,
                     fontSize: 35.0.h,
                     fontWeight: FontWeight.bold,
-                    fontFamily: 'Montserrat',
+                    fontFamily: 'Inter',
                   ),
                 ),
               ),
               Text(
                 'Set new password',
                 style: TextStyle(
-                    color: colorWhite,
-                    fontSize: 15.sp,
-                    fontFamily: 'Montserrat'),
+                    color: colorWhite, fontSize: 15.sp, fontFamily: 'Inter'),
               ),
               SizedBox(
                 height: MediaQuery.of(context).size.height * 0.09,
@@ -109,7 +107,7 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
                   child: Text(
                     'Reset Password',
                     style: TextStyle(
-                        fontFamily: 'Montserrat',
+                        fontFamily: 'Inter',
                         color: colorPrimary,
                         fontWeight: FontWeight.w700,
                         fontSize: 18.0.h),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:post_cripto/app_utils/colors.dart';
-import 'package:post_cripto/screens/home_screen.dart';
+import 'package:post_cripto/screens/home_screen/home_screen.dart';
 import 'package:post_cripto/screens/login_screen.dart';
 
 class SignUpButton extends StatefulWidget {

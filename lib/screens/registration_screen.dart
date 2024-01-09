@@ -49,7 +49,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                     'Create new account !',
                     style: TextStyle(
                         color: colorWhite,
-                        fontFamily: 'Montserrat',
+                        fontFamily: 'Inter',
                         fontSize: 35.0,
                         fontWeight: FontWeight.bold),
                   ),
@@ -61,7 +61,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   child: Text(
                     'Please enter your information',
                     style: TextStyle(
-                      fontFamily: 'Montserrat',
+                      fontFamily: 'Inter',
                       color: colorWhite,
                       fontSize: 14.0,
                       fontWeight: FontWeight.w600,
@@ -133,7 +133,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                         ' LogIn',
                         style: TextStyle(
                           color: colorWhite,
-                          fontFamily: 'Montserrat',
+                          fontFamily: 'Inter',
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -163,7 +163,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                           'Or continue with',
                           style: TextStyle(
                             color: colorWhite,
-                            fontFamily: 'Montserrat',
+                            fontFamily: 'Inter',
                           ),
                         ),
                       ),

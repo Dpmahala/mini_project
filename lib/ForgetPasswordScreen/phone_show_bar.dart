@@ -39,7 +39,7 @@ class _PhoneShowBarState extends State<PhoneShowBar> {
               child: Text(
                 'Forget Password',
                 style: TextStyle(
-                    fontFamily: 'Montserrat',
+                    fontFamily: 'Inter',
                     color: colorWhite,
                     fontWeight: FontWeight.bold,
                     fontSize: 35.0),
@@ -48,8 +48,7 @@ class _PhoneShowBarState extends State<PhoneShowBar> {
             const Center(
               child: Text(
                 'Enter your phone number and forget your password',
-                style:
-                    TextStyle(color: Colors.white54, fontFamily: 'Montserrat'),
+                style: TextStyle(color: Colors.white54, fontFamily: 'Inter'),
               ),
             ),
             const SizedBox(
@@ -90,7 +89,7 @@ class _PhoneShowBarState extends State<PhoneShowBar> {
                         style: TextStyle(
                             fontSize: 18.0,
                             fontWeight: FontWeight.w700,
-                            fontFamily: 'Montserrat',
+                            fontFamily: 'Inter',
                             color: colorPrimary),
                       )),
                     ),

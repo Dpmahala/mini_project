@@ -113,7 +113,7 @@ class _CreditCardState extends State<CreditCard>
         title: const Text(
           'Credit Card',
           style: TextStyle(
-            fontFamily: 'Montserrat',
+            fontFamily: 'Inter',
             color: Colors.white,
             fontSize: 25,
             fontWeight: FontWeight.w700,
@@ -214,7 +214,7 @@ class _CreditCardState extends State<CreditCard>
                       Text(
                         'Pay',
                         style: TextStyle(
-                            fontFamily: 'Montserrat',
+                            fontFamily: 'Inter',
                             fontWeight: FontWeight.w700,
                             color: Colors.white,
                             fontSize: 18.h),
@@ -225,7 +225,7 @@ class _CreditCardState extends State<CreditCard>
                       Text(
                         'INR 12,002',
                         style: TextStyle(
-                            fontFamily: 'Montserrat',
+                            fontFamily: 'Inter',
                             fontWeight: FontWeight.w700,
                             color: Colors.white,
                             fontSize: 14.h),

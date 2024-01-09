@@ -50,7 +50,7 @@ class _OtpScreenState extends State<OtpScreen> {
                 child: Text(
                   'Enter your OTP',
                   style: TextStyle(
-                    fontFamily: 'Montserrat',
+                    fontFamily: 'Inter',
                     color: colorWhite,
                     fontWeight: FontWeight.bold,
                     fontSize: 35.0,
@@ -87,7 +87,7 @@ class _OtpScreenState extends State<OtpScreen> {
                       child: Text(
                     'Verifiy OTP',
                     style: TextStyle(
-                        fontFamily: 'Montserrat',
+                        fontFamily: 'Inter',
                         color: colorPrimary,
                         fontSize: 18,
                         fontWeight: FontWeight.bold),
@@ -102,8 +102,8 @@ class _OtpScreenState extends State<OtpScreen> {
                 children: [
                   const Text(
                     "Don't recive code? ",
-                    style: TextStyle(
-                        color: Colors.white60, fontFamily: 'Montserrat'),
+                    style:
+                        TextStyle(color: Colors.white60, fontFamily: 'Inter'),
                   ),
                   GestureDetector(
                     onTap: () {},
@@ -112,7 +112,7 @@ class _OtpScreenState extends State<OtpScreen> {
                       style: TextStyle(
                           color: colorWhite,
                           fontWeight: FontWeight.w500,
-                          fontFamily: 'Montserrat'),
+                          fontFamily: 'Inter'),
                     ),
                   )
                 ],

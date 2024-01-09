@@ -42,14 +42,13 @@ class _EmailShowBarState extends State<EmailShowBar> {
                     color: colorWhite,
                     fontWeight: FontWeight.bold,
                     fontSize: 35.0,
-                    fontFamily: 'Montserrat'),
+                    fontFamily: 'Inter'),
               ),
             ),
             const Center(
               child: Text(
                 'Enter your email and forget your password',
-                style:
-                    TextStyle(color: Colors.white54, fontFamily: 'Montserrat'),
+                style: TextStyle(color: Colors.white54, fontFamily: 'Inter'),
               ),
             ),
             const SizedBox(
@@ -69,10 +68,10 @@ class _EmailShowBarState extends State<EmailShowBar> {
                           fillColor: colorWhite,
                           hintText: 'Enter your E-mail',
                           hintStyle: const TextStyle(
-                              color: colorsGrey, fontFamily: 'Montserrat'),
+                              color: colorsGrey, fontFamily: 'Inter'),
                           labelText: 'Email',
                           labelStyle: const TextStyle(
-                              color: colorWhite, fontFamily: 'Montserrat'),
+                              color: colorWhite, fontFamily: 'Inter'),
                           focusedBorder: OutlineInputBorder(
                             borderSide: const BorderSide(color: colorWhite),
                             borderRadius: BorderRadius.circular(
@@ -103,7 +102,7 @@ class _EmailShowBarState extends State<EmailShowBar> {
                           child: Text(
                         'Next',
                         style: TextStyle(
-                            fontFamily: 'Montserrat',
+                            fontFamily: 'Inter',
                             fontSize: 18.0,
                             fontWeight: FontWeight.w700,
                             color: colorPrimary),

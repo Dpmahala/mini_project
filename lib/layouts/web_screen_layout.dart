@@ -35,7 +35,7 @@ class _WebScreenState extends State<WebScreen> {
                 child: Align(
                   alignment: Alignment.center,
                   child: Text(
-                    'Post Criptography',
+                    'Post Cryptography',
                     style: TextStyle(
                         fontSize: 45,
                         color: Colors.white,

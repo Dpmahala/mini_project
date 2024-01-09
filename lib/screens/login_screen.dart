@@ -50,7 +50,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     'Welcome Back !',
                     style: TextStyle(
                         color: colorWhite,
-                        fontFamily: 'Montserrat',
+                        fontFamily: 'Inter',
                         fontSize: 35.0,
                         fontWeight: FontWeight.bold),
                   ),
@@ -131,7 +131,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     const Text(
                       "Don't have an Account?",
                       style: TextStyle(
-                        fontFamily: 'Montserrat',
+                        fontFamily: 'Inter',
                         color: Colors.white60,
                       ),
                     ),
@@ -169,7 +169,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         child: Text(
                           'Or continue with',
                           style: TextStyle(
-                              fontFamily: 'Montserrat', color: Colors.white),
+                              fontFamily: 'Inter', color: Colors.white),
                         ),
                       ),
                       Expanded(

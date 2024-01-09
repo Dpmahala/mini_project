@@ -5,7 +5,8 @@ import 'package:post_cripto/layouts/web_screen_layout.dart';
 class ResponsiveLayout extends StatefulWidget {
   final mobileScreen;
   final webScreen;
-  const ResponsiveLayout({super.key, required this.mobileScreen, required this.webScreen});
+  const ResponsiveLayout(
+      {super.key, required this.mobileScreen, required this.webScreen});
 
   @override
   State<ResponsiveLayout> createState() => _ResponsiveLayoutState();
